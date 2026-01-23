@@ -18,12 +18,6 @@ npm install originalvoices-aisdk
 
 2. Set your API key as an environment variable:
 
-```bash
-export ORIGINAL_VOICES_API_KEY=your_api_key_here
-```
-
-Or add it to your `.env` file:
-
 ```env
 ORIGINAL_VOICES_API_KEY=your_api_key_here
 ```
@@ -39,35 +33,10 @@ import { askTwins } from 'originalvoices-aisdk';
 const result = await generateText({
   model: YOUR_MODEL, // e.g., openai('gpt-4o'), anthropic('claude-3-5-sonnet'), etc.
   tools: { askTwins },
-  prompt: 'I want to understand UK fitness enthusiasts aged 18-30. ' +
-          'Ask them about their running shoe preferences and purchasing habits.',
+  prompt: 'I want to understand what influences UK fitness enthusiasts aged 18-30 when buying new running shoes',
 });
 
 console.log(result.text);
-```
-
-### Direct Tool Usage
-
-```typescript
-import { askTwins } from 'originalvoices-aisdk';
-
-// Note: Direct execution requires ToolExecutionOptions
-if (askTwins.execute) {
-  const result = await askTwins.execute(
-    {
-      audience: 'UK, 18-30, fitness enthusiasts',
-      questions: [
-        "When purchasing running shoes, what's most important to you?",
-        "How often do you replace your running shoes?"
-      ],
-    },
-    {
-      toolCallId: 'my-tool-call-id',
-      messages: [],
-    }
-  );
-  console.log(result);
-}
 ```
 
 ## Tool: askTwins
