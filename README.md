@@ -1,13 +1,13 @@
-# originalvoices-aisdk
+# OriginalVoices AI SDK
 
-[![npm version](https://img.shields.io/npm/v/originalvoices-aisdk.svg)](https://www.npmjs.com/package/originalvoices-aisdk)
+[![npm version](https://img.shields.io/npm/v/@originalvoices/ai-sdk.svg)](https://www.npmjs.com/package/@originalvoices/ai-sdk)
 
 Vercel AI SDK tool that provides access to OriginalVoices' network of Digital Twins for real-time audience research.
 
 ## Installation
 
 ```bash
-npm install originalvoices-aisdk
+npm install @originalvoices/ai-sdk
 ```
 
 **Peer Dependencies:** This package requires `ai` (^6.0.0) and `zod` (^4.0.0) as peer dependencies. If you're using the Vercel AI SDK, you likely already have these installed.
@@ -17,7 +17,6 @@ npm install originalvoices-aisdk
 1. Get your API key from [OriginalVoices](https://platform.originalvoices.ai)
 
 2. Set your API key as an environment variable:
-
 ```env
 ORIGINAL_VOICES_API_KEY=your_api_key_here
 ```
@@ -28,7 +27,7 @@ ORIGINAL_VOICES_API_KEY=your_api_key_here
 
 ```typescript
 import { generateText } from 'ai';
-import { askTwins } from 'originalvoices-aisdk';
+import { askTwins } from '@originalvoices/ai-sdk';
 
 const result = await generateText({
   model: YOUR_MODEL, // e.g., openai('gpt-4o'), anthropic('claude-3-5-sonnet'), etc.

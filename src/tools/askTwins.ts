@@ -54,7 +54,7 @@ export interface AskTwinsResponse {
  * @example
  * ```typescript
  * import { generateText } from 'ai';
- * import { askTwins } from 'originalvoices-aisdk';
+ * import { askTwins } from '@originalvoices/ai-sdk';
  *
  * const result = await generateText({
  *   model: YOUR_MODEL, // e.g., openai('gpt-4o'), anthropic('claude-3-5-sonnet'), etc.
