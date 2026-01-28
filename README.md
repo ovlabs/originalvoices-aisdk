@@ -18,7 +18,7 @@ npm install @originalvoices/ai-sdk
 
 2. Set your API key as an environment variable:
 ```env
-ORIGINAL_VOICES_API_KEY=your_api_key_here
+ORIGINALVOICES_API_KEY=your_api_key_here
 ```
 
 ## Usage
@@ -68,7 +68,7 @@ Trigger an OriginalVoices Twin interaction to gather insights from a specific au
 See the [examples](./examples) directory for more usage examples.
 
 ```bash
-# Run the example (requires ORIGINAL_VOICES_API_KEY to be set)
+# Run the example (requires ORIGINALVOICES_API_KEY to be set)
 npx tsx examples/askTwins.example.ts
 ```
 

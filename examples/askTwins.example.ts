@@ -5,7 +5,7 @@
  * audience insights using OriginalVoices Digital Twins.
  *
  * Prerequisites:
- * 1. Set ORIGINAL_VOICES_API_KEY environment variable
+ * 1. Set ORIGINALVOICES_API_KEY environment variable
  * 2. Install @ai-sdk/openai and set OPENAI_API_KEY (or use another AI provider)
  *
  * Run with: npx tsx examples/askTwins.example.ts
@@ -18,8 +18,8 @@ async function main() {
   console.log('='.repeat(50) + '\n');
 
   // Check for required environment variables
-  if (!process.env.ORIGINAL_VOICES_API_KEY) {
-    console.error('Error: ORIGINAL_VOICES_API_KEY environment variable is not set.');
+  if (!process.env.ORIGINALVOICES_API_KEY) {
+    console.error('Error: ORIGINALVOICES_API_KEY environment variable is not set.');
     console.error('Please set it before running this example.\n');
     process.exit(1);
   }

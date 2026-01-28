@@ -78,10 +78,10 @@ export const askTwins = tool({
     questions,
   }: AskTwinsInput): Promise<AskTwinsResponse> => {
     // Validate API key is present
-    const apiKey = process.env.ORIGINAL_VOICES_API_KEY;
+    const apiKey = process.env.ORIGINALVOICES_API_KEY;
     if (!apiKey) {
       throw new Error(
-        'ORIGINAL_VOICES_API_KEY environment variable is not set. ' +
+        'ORIGINALVOICES_API_KEY environment variable is not set. ' +
           'Please set it to use the askTwins tool.'
       );
     }
